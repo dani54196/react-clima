@@ -11,7 +11,7 @@ function App() {
 
   const buscar = (evt) => {
     if (evt.key === "Enter") {
-      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}&lang=sp`)
         .then((res) => res.json())
         .then((result) => {
           clima(result);
