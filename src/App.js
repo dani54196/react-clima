@@ -61,7 +61,7 @@ function App() {
           <input
             type="text"
             className="buscar-bar"
-            placeholder="buscar..."
+            placeholder="Search your city"
             onChange={(e) => setQuery(e.target.value)}
             value={query}
             onKeyPress={buscar}
